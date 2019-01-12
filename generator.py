@@ -1,10 +1,3 @@
-'''
-Created on 11 gen 2019
-
-@author: giulio
-
-'''
-
 import sys
 import csv
 import random as rand

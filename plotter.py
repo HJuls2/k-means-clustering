@@ -3,15 +3,6 @@ import matplotlib.pyplot as plt
 import sys
 import csv
 
-def plot(dataset):
-    for data in dataset:
-        plt.plot(data[0],data[1],'bo')
-    plt.show()
-    
-    
-    
-    
-
 if __name__ == '__main__':
     filename=sys.argv[1]
     
