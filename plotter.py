@@ -1,4 +1,3 @@
-
 import matplotlib.pyplot as plt
 import sys
 import csv
@@ -10,13 +9,13 @@ if __name__ == '__main__':
     with open(filename, mode="r") as file:
         reader=csv.reader(file)
         
-        i=0
         for pair in reader:
-            if(i is not 0):
+            try:
                 plt.plot(int(pair[0]),int(pair[1]),'bo')
-            
-            i=i+1
-           
+                print
+            except ValueError:
+                print('The first line is ignored')
+                     
             
     
     plt.xlabel('x')
